@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.baskara;
+
+/**
+ import java.util.Scanner;
+ * @author A-802
+ */
+
+import java.util.Scanner;
+ 
+public class Baskara{
+ 
+    public static void main(String[] args) {
+ Scanner teclado = new Scanner(System.in);
+     
+        double discriminante,x1, x2;
+         System.out.print( "Introdusca coeficiente a: " );
+        int a = teclado.nextInt();
+        System.out.print( "Introduzca coeficiente b: " );
+        int b = teclado.nextInt();
+        System.out.print( "Introduzca coeficiente c: " );
+        int c = teclado.nextInt();
+        discriminante = (b * b) + (-4 * (a * c));
+        if (discriminante<0){
+        System.out.print( "El resultado es un numero imaginario "  );
+        }
+        else {
+        x1 = ((-(b) + Math.sqrt(discriminante)) / 2 * a);
+        x2= ((-(b) - Math.sqrt(discriminante)) / 2 * a);
+        System.out.print( "x1= "  );
+        System.out.print( x1);  
+        System.out.print( "--------------------------------------------------------------------------- "  );
+        System.out.print( "x2= "  );
+        System.out.print( x2);
+        }
+
+        }
+    }
+ 
